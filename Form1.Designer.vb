@@ -32,6 +32,7 @@ Partial Class Form1
         Me.Txt1 = New System.Windows.Forms.TextBox()
         Me.PnlBody2 = New System.Windows.Forms.Panel()
         Me.Txt2 = New System.Windows.Forms.TextBox()
+        Me.cmbSize = New System.Windows.Forms.ComboBox()
         Me.Pnl1.SuspendLayout()
         Me.Pnl2.SuspendLayout()
         Me.PnlBody1.SuspendLayout()
@@ -102,10 +103,11 @@ Partial Class Form1
         '
         'PnlBody1
         '
+        Me.PnlBody1.Controls.Add(Me.cmbSize)
         Me.PnlBody1.Controls.Add(Me.Txt1)
         Me.PnlBody1.Location = New System.Drawing.Point(243, 41)
         Me.PnlBody1.Name = "PnlBody1"
-        Me.PnlBody1.Size = New System.Drawing.Size(200, 81)
+        Me.PnlBody1.Size = New System.Drawing.Size(369, 81)
         Me.PnlBody1.TabIndex = 1
         '
         'Txt1
@@ -129,6 +131,14 @@ Partial Class Form1
         Me.Txt2.Name = "Txt2"
         Me.Txt2.Size = New System.Drawing.Size(100, 31)
         Me.Txt2.TabIndex = 0
+        '
+        'cmbSize
+        '
+        Me.cmbSize.FormattingEnabled = True
+        Me.cmbSize.Location = New System.Drawing.Point(166, 26)
+        Me.cmbSize.Name = "cmbSize"
+        Me.cmbSize.Size = New System.Drawing.Size(167, 32)
+        Me.cmbSize.TabIndex = 1
         '
         'Form1
         '
@@ -163,4 +173,5 @@ Partial Class Form1
     Friend WithEvents Txt1 As TextBox
     Friend WithEvents PnlBody2 As Panel
     Friend WithEvents Txt2 As TextBox
+    Friend WithEvents cmbSize As ComboBox
 End Class

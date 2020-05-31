@@ -2,10 +2,18 @@
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
 
+        Me.cmbSize.DataSource = KeyValue.GetSize()
+        Me.cmbSize.DisplayMember = "Value"
+        Me.cmbSize.ValueMember = "Key"
+
         Call Rdo1_CheckedChanged(Nothing, Nothing)
         Call Rdo2_CheckedChanged(Nothing, Nothing)
 
     End Sub
+
+    Private Function GetSize() As Object
+        Throw New NotImplementedException()
+    End Function
 
     Private Sub Rdo1_CheckedChanged(sender As Object, e As EventArgs) Handles Rdo11.CheckedChanged
 
